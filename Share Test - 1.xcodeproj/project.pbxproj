@@ -14,6 +14,7 @@
 		930034C51EF547F0001569B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 930034C31EF547F0001569B9 /* LaunchScreen.storyboard */; };
 		930034D01EF547F0001569B9 /* Share_Test___1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930034CF1EF547F0001569B9 /* Share_Test___1Tests.swift */; };
 		930034DB1EF547F0001569B9 /* Share_Test___1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930034DA1EF547F0001569B9 /* Share_Test___1UITests.swift */; };
+		930034EA1EF54A81001569B9 /* getURL.js in Resources */ = {isa = PBXBuildFile; fileRef = 930034E91EF54A81001569B9 /* getURL.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,8 @@
 		930034D61EF547F0001569B9 /* Share Test - 1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Share Test - 1UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		930034DA1EF547F0001569B9 /* Share_Test___1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Share_Test___1UITests.swift"; sourceTree = "<group>"; };
 		930034DC1EF547F0001569B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		930034E81EF5481D001569B9 /* Share Test - 1.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Share Test - 1.entitlements"; sourceTree = "<group>"; };
+		930034E91EF54A81001569B9 /* getURL.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = getURL.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +100,14 @@
 		930034B91EF547EF001569B9 /* Share Test - 1 */ = {
 			isa = PBXGroup;
 			children = (
+				930034E81EF5481D001569B9 /* Share Test - 1.entitlements */,
 				930034BA1EF547F0001569B9 /* AppDelegate.swift */,
 				930034BC1EF547F0001569B9 /* ViewController.swift */,
 				930034BE1EF547F0001569B9 /* Main.storyboard */,
 				930034C11EF547F0001569B9 /* Assets.xcassets */,
 				930034C31EF547F0001569B9 /* LaunchScreen.storyboard */,
 				930034C61EF547F0001569B9 /* Info.plist */,
+				930034E91EF54A81001569B9 /* getURL.js */,
 			);
 			path = "Share Test - 1";
 			sourceTree = "<group>";
@@ -195,6 +200,11 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 2RA4D2RLK7;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					930034CA1EF547F0001569B9 = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -238,6 +248,7 @@
 				930034C51EF547F0001569B9 /* LaunchScreen.storyboard in Resources */,
 				930034C21EF547F0001569B9 /* Assets.xcassets in Resources */,
 				930034C01EF547F0001569B9 /* Main.storyboard in Resources */,
+				930034EA1EF54A81001569B9 /* getURL.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +426,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Share Test - 1/Share Test - 1.entitlements";
 				DEVELOPMENT_TEAM = 2RA4D2RLK7;
 				INFOPLIST_FILE = "Share Test - 1/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -428,6 +440,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Share Test - 1/Share Test - 1.entitlements";
 				DEVELOPMENT_TEAM = 2RA4D2RLK7;
 				INFOPLIST_FILE = "Share Test - 1/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
